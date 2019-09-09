@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{style} % Use US Letter paper, change to a4paper for A4 
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{tikz}
+\def\ci#1{\textcircled{\resizebox{.5em}{!}{#1}}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+% \lastupdated % Print the Last Updated text at the top right
+\namesection{{graham}}{wing}{
+\href{mailto:gewing@ucla.edu}{\ci{\faEnvelope}} {\fontsize{10}{10}\selectfont \href{mailto:gewing@ucla.edu}{gewing@ucla.edu}}}
+{
+\ci{\faPhone}  {\fontsize{10}{10}\selectfont 408-891-0933} 
+}
+{
+\href{https://www.linkedin.com/in/graham-wing/}{\ci{\faLinkedin}}  \href{https://www.linkedin.com/in/graham-wing/}{\fontsize{10}{10}\selectfont linkedin.com/in/graham-wing}
+}
+{
+\href{https://github.com/gewing97}{\ci{\faGithub}} \href{https://github.com/gewing97}{\fontsize{10}{10}\selectfont github.com/gewing97}    
+}
+
+
+\input{page1.tex}
+% \input{page2.tex}
+
+\end{document}
