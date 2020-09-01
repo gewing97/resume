@@ -2,8 +2,7 @@
 %	LEFT COLUMN
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
-
+\begin{minipage}[t]{0.22\textwidth} % The left column takes up 33% of the text width of the page
 
 \section{Education} 
 \runsubsection{BS}
@@ -12,7 +11,7 @@
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \vspace{1pt}
 \begin{tightitemize}
-\item gpa: 3.6
+\item gpa: 3.625
 \item tech breadth:\\engineering mathematics
 \end{tightitemize}
 \vspace{6pt}
@@ -24,7 +23,8 @@ python \\
 c/c++ \\
 java \\
 sql \\
-matlab \\ 
+matlab \\
+bash
 \sectionspace
 
 \subsection{environments}
@@ -32,13 +32,14 @@ linux \\
 windows \\
 aws \\
 git \\
+\sectionspace
 
-\sectionspace % Some whitespace after the section
+% \sectionspace % Some whitespace after the section
 %------------------------------------------------
 % Coursework
 %------------------------------------------------
 
-\section{Coursework}
+\subsection{academia}
 % \subsection{In Progress}
 % reinforcement learning
 % \sectionspace
@@ -59,7 +60,7 @@ linear algebra \\
 machine learning \\
 network security \\
 operating systems \\
-parallel \& distributed computing \\
+parallel computing \\
 programming languages \\ 
 software engineering \\
 real analysis\\
@@ -91,8 +92,17 @@ reinforcement learning\\
 %	RIGHT COLUMN
 %----------------------------------------------------------------------------------------
 %
-\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+\begin{minipage}[t]{0.78\textwidth} % The right column takes up 78% of the text width of the page
 
+\section{Objective}
+\begin{center}
+\begin{minipage}[t]{0.99\textwidth}
+Recent UCLA alum with a proclivity for \important{problem solving} in software development. Experienced deploying \important{full-stack solutions} in fast paced devops environments with short development cycles. 
+Seeking \important{full-time software engineering} opportunities.
+\end{minipage}
+\end{center}
+
+    
 %------------------------------------------------
 % Experience
 %------------------------------------------------
@@ -102,25 +112,25 @@ reinforcement learning\\
 \runsubsection{UCLA ELFIN CubeSat Project}
 \descript{| flight dynamics lead }%\small(research asst.)}
 \location{Los Angeles, CA | 2017 - Present}
-\vspace{\topsep}
-\begin{tightitemize}
-    \item led major refactor effort to improve robustness and reliability of python pipeline
-    \item simplified and automated workflow by implementing socketed python servers as interfaces between matlab, simulink, idl, stk, and a sql database
-    \item developed asynchronous python server for real time control of antenna rotors and software defined radio
-    \item designed and managed sql database for storage of satellite telemetry and orbital events used for critical maneuver and activity planning
-\end{tightitemize}
 % \vspace{\topsep}
+\begin{tightitemize}
+    \item subsystem lead on devops team of nasa funded, published small form factor satellite mission
+    \item developed python solutions for real time antenna control, orbital event planning, and satellite telemetry processing
+    \item utilized asyncio and zmq to automate mission critical software stack
+    \item led major refactor effort to improve robustness and reliability of python pipeline
+\end{tightitemize}
+\vspace{\topsep}
 
 
 \runsubsection{The Boeing Company}
 \descript{| production engineering intern}
 \location{Everett, WA | Summer 2019}
 \begin{tightitemize}
-    \item lessened manual effort of enterprise standardization by employing doc2vec to classify document/process equivalence
+    \item investigated natural langauge processing as a tool for standardizing enterprise processes
     \item reduced development overhead by creating python-sql interface extensible to different sql implementations
-    \item created sql database and accompanying python scripts to automate assessment data ingestion
+    \item ensured data consistency by converting a spreadsheet cache to a sql database
 \end{tightitemize}
-% \vspace{\topsep}
+\vspace{\topsep}
 
 
 \runsubsection{Ondas Networks Inc.}
@@ -139,7 +149,7 @@ reinforcement learning\\
 \descript{}
 \location{ucla cs | spring 2020}
 \begin{tightitemize}
-    \item recreated the results of silver et al. comparison between deep q learning and deep double q learning 
+    \item recreated the results of silver et al. comparison of deep q learning and deep double q learning 
     \item implemented dqn and ddqn using pytorch and openai gym
 \end{tightitemize}
 

@@ -59,7 +59,7 @@
 #3 
 \vspace{6 pt}
 \\
-#4
+#2
 \end{minipage}
 % phone / email
 \begin{minipage}[t][.8cm][t]{.30\textwidth}
@@ -69,11 +69,10 @@
 % \fontspec[Path = fonts/raleway/]{Raleway-Medium}
 \fontspec[Path = fonts/lato/]{Lato-Bol}
 \fontsize{22}{18}\selectfont 
-#5
+#1
 \vspace{6 pt}
 \\
-#6
-% Contact information font
+#5
 \end{minipage}
 \begin{minipage}[t][.8cm][t]{.1\textwidth}
 \vspace{-27 pt} % Hacky fix for awkward extra vertical space
@@ -91,6 +90,8 @@
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
 %----------------------------------------------------------------------------------------
+
+\hyphenpenalty=100000
 
 \usepackage{titlesec} % Required for customizing section/subsection/etc titles
 \usepackage{textcase}
@@ -112,6 +113,11 @@
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
 \color{subsubheadings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{10pt}{12pt}\selectfont\lowercase {#1\\} \normalfont}
+
+\newcommand{\important}[1]{
+\color{headings}
+\textbf{#1}
+\normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING

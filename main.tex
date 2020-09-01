@@ -12,13 +12,17 @@
 \usepackage{tikz}
 \def\ci#1{\textcircled{\resizebox{.5em}{!}{#1}}}
 
+\setfontfamily{\FA}{[FontAwesome.otf]}
 
+\begin{document}
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 % \lastupdated % Print the Last Updated text at the top right
-\namesection{{graham}}{wing}{
-\href{mailto:gewing@ucla.edu}{\ci{\faEnvelope}} {\fontsize{10}{10}\selectfont \href{mailto:gewing@ucla.edu}{gewing@ucla.edu}}}
+\namesection{{graham}}{wing}
+{
+\href{mailto:gewing@ucla.edu}{\ci{\faEnvelope}} {\fontsize{10}{10}\selectfont \href{mailto:gewing@ucla.edu}{gewing@ucla.edu}}
+}
 {
 \ci{\faPhone}  {\fontsize{10}{10}\selectfont 408-891-0933} 
 }
@@ -28,7 +32,6 @@
 {
 \href{https://github.com/gewing97}{\ci{\faGithub}} \href{https://github.com/gewing97}{\fontsize{10}{10}\selectfont github.com/gewing97}    
 }
-
 
 \input{page1.tex}
 % \input{page2.tex}
