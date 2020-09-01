@@ -59,7 +59,7 @@
 #3 
 \vspace{6 pt}
 \\
-#2
+#4
 \end{minipage}
 % phone / email
 \begin{minipage}[t][.8cm][t]{.30\textwidth}
@@ -69,7 +69,7 @@
 % \fontspec[Path = fonts/raleway/]{Raleway-Medium}
 \fontspec[Path = fonts/lato/]{Lato-Bol}
 \fontsize{22}{18}\selectfont 
-#1
+#6
 \vspace{6 pt}
 \\
 #5
